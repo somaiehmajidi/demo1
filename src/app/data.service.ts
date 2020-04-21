@@ -23,10 +23,10 @@ export class DataService {
     this.contacts.push(contact);
   }
 
-  getEmployees(): Employee[]{
+  public getEmployees(): Employee[]{
     return EMPLOYEES;
   }
-  getEmployee(id: number): Employee{
+  public getEmployee(id: number): Employee{
     return EMPLOYEES.find(employee => employee.id === id);
   }
 

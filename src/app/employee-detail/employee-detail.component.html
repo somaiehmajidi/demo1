@@ -1,0 +1,27 @@
+<div class="container" style="margin-top: 80px;">
+    <div *ngIf ="employee"> 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" routerLink="/home">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" routerLink="/employees-list">Staff</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{employee.id}}</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-3"><img src="assets/avatar.png" style="width: auto;"></div>
+            <div class="col-9">
+                <h3>{{employee.name}}</h3>
+                <div class="bd-example">Details:</div>
+                <div><span>Employee Id: </span> {{employee.id}}</div>
+                <div><span>total working houres: </span> {{employee.houres}}</div>
+                <div><span>address: </span> {{employee.add | uppercase}}</div>
+                <div><span>phone no: </span> {{employee.phone}}</div>
+                <div class="bd-example">about {{employee.name}}:</div>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+        </div>
+        <br>
+        <button class="btn btn-outline-info" (click)="goBack()">go back</button>
+    
+</div>
+</div>

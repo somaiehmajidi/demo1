@@ -10,6 +10,9 @@ import { ContactlistComponent } from './contactlist/contactlist.component';
 import { NewcontactComponent } from './newcontact/newcontact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { TopsComponent } from './tops/tops.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FooterComponent } from './footer/footer.component';
     ContactlistComponent,
     NewcontactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    EmployeesComponent,
+    EmployeeDetailComponent,
+    TopsComponent
   ],
   imports: [
     BrowserModule,
