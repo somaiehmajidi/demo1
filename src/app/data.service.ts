@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Employee } from './employee';
+import { EMPLOYEES } from './employees-mock';
 
 @Injectable({
   providedIn: 'root'
@@ -20,4 +22,12 @@ export class DataService {
   public createContact (contact: {id, name, description, email}){
     this.contacts.push(contact);
   }
+
+  getEmployees(): Employee[]{
+    return EMPLOYEES;
+  }
+  getEmployee(id: number): Employee{
+    return EMPLOYEES.find(employee => employee.id === id);
+  }
+
 }
