@@ -12,7 +12,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
-import { TopsComponent } from './tops/tops.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,7 @@ import { TopsComponent } from './tops/tops.component';
     HeaderComponent,
     FooterComponent,
     EmployeesComponent,
-    EmployeeDetailComponent,
-    TopsComponent
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,

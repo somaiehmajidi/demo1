@@ -1,1 +1,35 @@
-<p>home works!</p>
+<div class="container" style="margin-top: 80px;">
+    <h3>Employees of month:</h3>
+    <div class="row">
+        <div class="col-6" *ngFor="let employee of employees"
+        routerLink="/employee/{{employee.id}}">
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/avatar.png">
+                </div>
+                <div class="col-8">
+                    <br>
+                    <div>name: {{employee.name}}
+                        <span class="badge badge-pill badge-danger">Top</span>
+                    </div>
+                    <div>total working houres:{{employee.houres}}</div>
+                    <div>productivity level: The highest</div>
+                    <br>
+                    <a href="#" class="btn btn-outline-info" routerLink="/employee/{{employee.id}}">details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3>Useful links:</h3>
+    <div class="row">
+        <div class="col-12">
+            <ul>
+                <li><a href="#">add new employee</a></li>
+                <li><a href="#">edit staff information</a></li>
+                <li><a href="#">add new contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
